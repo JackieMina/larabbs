@@ -26,5 +26,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
         \Illuminate\Database\Schema\Builder::defaultStringLength(191);
+
+        \Illuminate\Pagination\Paginator::useBootstrap();
     }
 }
